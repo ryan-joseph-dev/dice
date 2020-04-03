@@ -2,15 +2,13 @@ package com.ryryapps
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.TextView
+import com.ryryapps.dice.R
 import java.util.*
-import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,12 +45,15 @@ class MainActivity : AppCompatActivity() {
 
             val shake = AnimationUtils.loadAnimation(this, R.anim.shake)
 
+            // Animate dice shake action.
+            dice1TextView.startAnimation(shake)
             dice1ImageView.startAnimation(shake)
+            dice2TextView.startAnimation(shake)
             dice2ImageView.startAnimation(shake)
 
+            // Set random number on dice.
             val dice1 = Random().nextInt(seekBar.progress + 1) + 1
             val dice2 = Random().nextInt(seekBar.progress + 1) + 1
-
             dice1TextView.text = dice1.toString()
             dice2TextView.text = dice2.toString()
         }
