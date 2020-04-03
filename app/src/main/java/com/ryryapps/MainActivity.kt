@@ -27,7 +27,21 @@ class MainActivity : AppCompatActivity() {
         val dice2ImageView = findViewById<ImageView>(R.id.dice2ImageView)
 
         val seekBar = findViewById<SeekBar>(R.id.seekBar)
+        val howManyTextView = findViewById<TextView>(R.id.howManyTextView)
 
+        seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+            override fun onProgressChanged(seekBar: SeekBar, i: Int, b: Boolean) {
+                // Display the current progress of SeekBar
+                val j = i + 1
+                howManyTextView.text = "Dice max roll: $j"
+            }
+            override fun onStartTrackingTouch(seekBar: SeekBar) {
+                // Do something
+            }
+            override fun onStopTrackingTouch(seekBar: SeekBar) {
+                // Do something
+            }
+        })
 
         rollButton.setOnClickListener() {
 
@@ -36,8 +50,8 @@ class MainActivity : AppCompatActivity() {
             dice1ImageView.startAnimation(shake)
             dice2ImageView.startAnimation(shake)
 
-            val dice1 = Random().nextInt(seekBar.progress) + 1
-            val dice2 = Random().nextInt(seekBar.progress) + 1
+            val dice1 = Random().nextInt(seekBar.progress + 1) + 1
+            val dice2 = Random().nextInt(seekBar.progress + 1) + 1
 
             dice1TextView.text = dice1.toString()
             dice2TextView.text = dice2.toString()

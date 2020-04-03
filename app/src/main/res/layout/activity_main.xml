@@ -22,6 +22,7 @@
 
     <SeekBar
         android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -29,8 +30,9 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="24dp"
-        android:max="10"
-        android:progress="3"
+        android:indeterminate="false"
+        android:max="11"
+        android:progress="5"
         app:layout_constraintBottom_toTopOf="@+id/rollButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -42,7 +44,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginBottom="16dp"
-        android:text="How Many"
+        android:text="Dice max roll: 6"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintStart_toStartOf="parent" />
