@@ -6,6 +6,34 @@
     android:layout_height="match_parent"
     tools:context="com.ryryapps.MainActivity">
 
+    <ImageView
+        android:id="@+id/dice3ImageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="8dp"
+        android:foreground="@drawable/dice"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <ImageView
+        android:id="@+id/dice3ImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:foreground="@drawable/dice"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
+
     <Button
         android:id="@+id/rollButton"
         android:layout_width="0dp"
@@ -20,34 +48,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <SeekBar
-        android:id="@+id/seekBar"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="24dp"
-        android:indeterminate="false"
-        android:max="19"
-        android:progress="5"
-        app:layout_constraintBottom_toTopOf="@+id/rollButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
-        android:id="@+id/howManyTextView"
+        android:id="@+id/TotalTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginBottom="16dp"
-        android:text="Dice size: 6"
+        android:text="Total: "
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/seekBar"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="578dp" />
 
     <View
         android:id="@+id/divider"
@@ -59,7 +69,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="16dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toTopOf="@+id/howManyTextView"
+        app:layout_constraintBottom_toTopOf="@+id/TotalTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -67,7 +77,7 @@
         android:id="@+id/dice2ImageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
         android:layout_marginBottom="16dp"
@@ -75,7 +85,8 @@
         android:foreground="@drawable/dice"
         app:layout_constraintBottom_toTopOf="@+id/divider"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
 
     <ImageView
         android:id="@+id/dice1ImageView"
@@ -83,12 +94,13 @@
         android:layout_height="100dp"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         android:foreground="@drawable/dice"
         app:layout_constraintBottom_toTopOf="@+id/divider"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
 
     <TextView
         android:id="@+id/dice1TextView"
@@ -137,5 +149,23 @@
         app:layout_constraintEnd_toEndOf="@+id/dice2ImageView"
         app:layout_constraintStart_toStartOf="@+id/dice2ImageView"
         app:layout_constraintTop_toBottomOf="@+id/dice2ImageView" />
+
+    <TextView
+        android:id="@+id/dice3DescriptionTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_dice_description"
+        app:layout_constraintEnd_toEndOf="@+id/dice3ImageView"
+        app:layout_constraintStart_toStartOf="@+id/dice3ImageView"
+        app:layout_constraintTop_toBottomOf="@+id/dice3ImageView" />
+
+    <TextView
+        android:id="@+id/dice4DescriptiontextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_dice_description"
+        app:layout_constraintEnd_toEndOf="@+id/dice3ImageView2"
+        app:layout_constraintStart_toStartOf="@+id/dice3ImageView2"
+        app:layout_constraintTop_toBottomOf="@+id/dice3ImageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
