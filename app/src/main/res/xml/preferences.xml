@@ -1,0 +1,53 @@
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        app:key="number_of_dice_category"
+        app:title="Number of dice">
+
+        <ListPreference
+            app:key="how_many_dice"
+            app:title="How many dice would you like to roll?"
+            app:entries="@array/number_of_dice"
+            app:entryValues="@array/number_of_dice"
+            app:defaultValue="1"
+            app:summary="%s"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="size_of_dice_category"
+        app:title="Size of Dice">
+
+        <ListPreference
+            app:key="dice_1"
+            app:title="First dice size:"
+            app:entries="@array/size_of_dice_descriptions"
+            app:entryValues="@array/size_of_dice"
+            app:defaultValue="d6"
+            app:summary="%s"/>
+
+        <ListPreference
+            app:key="dice_2"
+            app:title="Second dice size:"
+            app:entries="@array/size_of_dice_descriptions"
+            app:entryValues="@array/size_of_dice"
+            app:defaultValue="d6"
+            app:summary="%s"/>
+
+        <ListPreference
+            app:key="dice_3"
+            app:title="Third dice size:"
+            app:entries="@array/size_of_dice_descriptions"
+            app:entryValues="@array/size_of_dice"
+            app:defaultValue="d6"
+            app:summary="%s"/>
+
+        <ListPreference
+            app:key="dice_4"
+            app:title="Fourth dice size"
+            app:entries="@array/size_of_dice_descriptions"
+            app:entryValues="@array/size_of_dice"
+            app:defaultValue="d6"
+            app:summary="%s"/>
+    </PreferenceCategory>
+</PreferenceScreen>
