@@ -5,15 +5,19 @@
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="welcome">"Welcome Friend!"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_settings">Settings</string>
 
+    <string name="bear_description">bear image</string>
+
+    <string name="dice_description">dice image</string>
     <string name="default_dice_description">d6</string>
     <string name="default_dice_value">6</string>
 
+    <string name="total">Total: </string>
     <string name="roll_button">Roll</string>
 
     <!-- Preference Titles -->

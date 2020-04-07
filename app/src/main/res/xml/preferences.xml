@@ -23,7 +23,7 @@
             app:title="First dice size:"
             app:entries="@array/size_of_dice_descriptions"
             app:entryValues="@array/size_of_dice"
-            app:defaultValue="d6"
+            app:defaultValue="6"
             app:summary="%s"/>
 
         <ListPreference
@@ -31,7 +31,7 @@
             app:title="Second dice size:"
             app:entries="@array/size_of_dice_descriptions"
             app:entryValues="@array/size_of_dice"
-            app:defaultValue="d6"
+            app:defaultValue="6"
             app:summary="%s"/>
 
         <ListPreference
@@ -39,7 +39,7 @@
             app:title="Third dice size:"
             app:entries="@array/size_of_dice_descriptions"
             app:entryValues="@array/size_of_dice"
-            app:defaultValue="d6"
+            app:defaultValue="6"
             app:summary="%s"/>
 
         <ListPreference
@@ -47,7 +47,7 @@
             app:title="Fourth dice size"
             app:entries="@array/size_of_dice_descriptions"
             app:entryValues="@array/size_of_dice"
-            app:defaultValue="d6"
+            app:defaultValue="6"
             app:summary="%s"/>
     </PreferenceCategory>
 </PreferenceScreen>

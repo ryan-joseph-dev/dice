@@ -4,19 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#4CAF50"
     android:gravity="center"
-    android:background="@color/colorPrimary"
+    android:orientation="vertical"
     tools:context="com.ryryapps.SplashActivity">
 
     <ImageView
-        android:src="@drawable/bear"
         android:layout_width="250dp"
-        android:layout_height="250dp" />
+        android:layout_height="253dp"
+        android:contentDescription="@string/bear_description"
+        android:cropToPadding="false"
+        android:src="@drawable/just_bear" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Loading..."
+        android:text="@string/welcome"
         android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold" />
