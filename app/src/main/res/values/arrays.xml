@@ -34,4 +34,10 @@
         <item>12</item>
         <item>20</item>
     </string-array>
+
+    <string-array name="appearance_theme">
+        <item>casino</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
 </resources>

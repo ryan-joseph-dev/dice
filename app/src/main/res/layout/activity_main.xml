@@ -2,10 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4CAF50"
-    tools:context="com.ryryapps.MainActivity">
+    android:focusableInTouchMode="false"
+    tools:context="com.ryryapps.MainActivity"
+    android:screenOrientation="portrait">
 
     <!--    Settigns Button-->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -17,10 +19,10 @@
         android:layout_marginRight="8dp"
         android:clickable="true"
         android:focusable="true"
-        app:backgroundTint="#CDDC39"
+        app:backgroundTint="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
+        app:srcCompat="@drawable/ic_settings_black_24dp" />
 
 
     <!--    Dice 1-->
@@ -196,9 +198,11 @@
         android:layout_marginEnd="96dp"
         android:layout_marginRight="96dp"
         android:layout_marginBottom="24dp"
-        android:background="#009688"
+        android:background="@color/colorPrimary"
         android:text="@string/roll_button"
         android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

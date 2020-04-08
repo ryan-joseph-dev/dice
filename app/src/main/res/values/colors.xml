@@ -2,5 +2,17 @@
 <resources>
     <color name="colorPrimary">#009688</color>
     <color name="colorPrimaryDark">#00635A</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#00CCB9</color>
+
+    <color name="lightPrimary">#009688</color>
+    <color name="lightText">#000000</color>
+    <color name="lightBackground">#FFFFFF</color>
+
+    <color name="darkPrimary">#009688</color>
+    <color name="darkText">#009688</color>
+    <color name="darkBackground">#2B2B2B</color>
+
+    <color name="casinoPrimary">#009688</color>
+    <color name="casinoText">#FFFFFF</color>
+    <color name="casinoBackground">#148318</color>
 </resources>

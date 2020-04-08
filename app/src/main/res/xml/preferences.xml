@@ -50,4 +50,17 @@
             app:defaultValue="6"
             app:summary="%s"/>
     </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="appearance_category"
+        app:title="Appearance">
+
+        <ListPreference
+            app:key="appearance_theme"
+            app:title="Theme: "
+            app:entries="@array/appearance_theme"
+            app:entryValues="@array/appearance_theme"
+            app:defaultValue="casino"
+            app:summary="%s"/>
+    </PreferenceCategory>
 </PreferenceScreen>
