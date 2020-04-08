@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.ryryapps.MainActivity"
+        android:label="MainActivity" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.ryryapps.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+    <fragment
+        android:id="@+id/mySettingsFragment"
+        android:name="com.ryryapps.SettingsActivity.MySettingsFragment"
+        android:label="MySettingsFragment" >
+        <action
+            android:id="@+id/action_mySettingsFragment_to_mainActivity"
+            app:destination="@id/mainActivity"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_enter"
+            app:popUpTo="@id/nav_graph"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_enter" />
+    </fragment>
+</navigation>
