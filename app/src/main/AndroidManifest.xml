@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:screenOrientation="portrait">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1409061861215532~3899502087"/>
         <activity
             android:name="com.ryryapps.SettingsActivity"
             android:screenOrientation="nosensor"
