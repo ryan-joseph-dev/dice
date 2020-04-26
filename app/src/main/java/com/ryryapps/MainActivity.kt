@@ -11,15 +11,25 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.preference.PreferenceManager
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.ryryapps.dice.R
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var mAdView : AdView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        MobileAds.initialize(this) {}
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
 
         val rollButton = findViewById<Button>(R.id.rollButton)
         val settingsButton = findViewById<FloatingActionButton>(R.id.settingsButton)
